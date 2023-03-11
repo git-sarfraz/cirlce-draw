@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>circle task
+  </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+	
+<!-- partial:index.partial.html -->
+<div class="percentage-meter-container">
+	<svg viewBox="0 0 200 200" class="percentage-meter">
+		<defs>
+			<linearGradient id="circleGradient">
+				<stop offset="0%" stop-color="#FF8722 "/>
+				
+        		<stop offset="100%" stop-color="#7400E7"/>
+        	</linearGradient>
+		</defs>
+		<circle cx="100" cy="100" r="90" class="track" />
+		<circle cx="100" cy="100" r="90" class="path" />
+	</svg>
+	<div class="percentage-text">
+		<span class="percentage-number">0</span>
+		<span class="percent-sign">%</span>
+	</div>
+</div>
+<input class="percentage" name="percentage" type="number" min="0" max="100" />%
+<button type="button" class="draw">Draw Circle</button>
+<button type="button" class="reset">Reset</button>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
